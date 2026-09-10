@@ -49,9 +49,13 @@ forces the A button every frame and treats Start as "stop the demo".
 
 ## Easter eggs
 
-**A leftover PC sound file.** One voice clip is a Sound Blaster `.VOC` file
-with its "Creative Voice File" header still attached - the only trace of a
-development tool anywhere in the cartridge. It is in the Other Stuff folder.
+**A leftover PC sound file the game never plays.** One Sound Blaster `.VOC`
+file sits in the ROM with its "Creative Voice File" header attached - the
+only trace of a development tool anywhere in the cartridge - and nothing in
+the game refers to it. Its header claims 8.7 seconds of audio; only the first
+1.75 seconds, a low swell and a decaying hit, is real, and the rest of the
+claimed space was overwritten by other data. Both cuts are in the Other Stuff
+folder.
 
 Every word of Chinese in the game exists only as picture tiles; there is no
 text, no build date, and no developer name.

@@ -1,0 +1,19 @@
+Sound Blaster .VOC files found inside the cartridges, with .wav conversions.
+
+They are plain unsigned 8-bit PCM at 8 kHz, and that is how the games play
+them: Sango Fighter copies the bytes straight into the sound chip's RAM and
+plays them raw, which was watched happening in the emulator. Ignore what the
+headers say. Two header bytes in every file are wrong - the header-size field
+reads 282 instead of 26, and the "pack" byte claims 4-bit ADPCM on 67 of the
+76 files - so a real VOC player will misread them. The .wav files beside each
+.voc are the bytes written out as PCM, which is correct.
+
+Sango Fighter: 75 voice clips, the fighters' shouts and grunts, copied from
+the PC original with the PC container headers still attached.
+
+Gambling Overlord Mahjong: one file, and nothing in the game ever plays it.
+Its header claims 8.7 seconds, but only the first 1.75 seconds is audio - a
+low swell and a decaying hit, a gong or drum. After that the space the header
+claims is occupied by other data from the build, which is why the full-length
+.wav turns into a harsh buzz at about two seconds. Both versions are here: the
+1.75 second cut is the sound, the full-length one is what the header says.

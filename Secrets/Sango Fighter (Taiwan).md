@@ -38,8 +38,9 @@ stale editor buffers got assembled in with the artwork.
 
 **75 PC sound files, headers and all.** The voice clips are Sound Blaster
 `.VOC` files copied straight from the PC original with their "Creative Voice
-File" container headers intact. A cartridge has no use for the headers; they
-are just along for the ride.
+File" container headers intact. The game ignores the headers entirely and
+streams the raw bytes into the sound chip - which is just as well, because two
+bytes in every header are wrong and would confuse a real VOC player.
 
 **Half a megabyte of mirror.** The last 512 KB of the 3 MB cartridge is a
 byte-for-byte copy of the 512 KB before it.
