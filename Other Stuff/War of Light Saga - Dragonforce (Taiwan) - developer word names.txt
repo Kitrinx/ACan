@@ -1,0 +1,117 @@
+Dragon Force is written in a Forth-style threaded language, and the developers
+left the names of their own words in the cartridge. Each name sits in front of
+a stack-depth check: if the stack is wrong when that word runs, the game (with
+its debug flag on) prints ERROR!!! and the name. These are their names for the
+parts of the game, exactly as stored - misspellings included.
+
+== Word names (address, name)
+  $0068B8  ERROR!!!
+  $00C5D8  ?
+  $00DD50  (A6):
+  $00DD8C  (A7):
+  $0104A0  TALK_PAUSE
+  $012244  TOWN_MOVE_19
+  $0122C8  TOWN_MOVE_20
+  $0126D4  TOWN_MOVE_4_18
+  $012AA8  TOWN_RPG_TALK
+  $012B54  (TOWN_CHR_PROG)
+  $013150  START_WAR_CURCE
+  $0132D4  LOCAET_WAR_CURCE
+  $019DCC  TOWN_TALK
+  $01A5C4  TOWN_MAP_MOVE
+  $01DDD8  DRAW_CAM_ICON
+  $021BA4  START_GAME
+  $023760  LV:
+  $023780  HP:
+  $0237A0  ATP:
+  $0237C4  MP:
+  $0237E4  DFP:
+  $023808  AG:
+  $023828  EXP:
+  $023AB0  /
+  $023AEC  /
+  $023B08  ---/---
+  $023B50  /
+  $023B80  /
+  $02446C  *
+  $02447C   
+  $024508  +
+  $024518  -
+  $024588  *** 
+  $0245BC  --- 
+  $025D5C  .RESET_SHOP_BAR'
+  $026090  BIG
+  $026368  0
+  $0263B4  :
+  $0263D0  :
+  $026964  SELECT_SRAM_FILE
+  $026C68  RPG_DIE_PROG
+  $0270E0  CHUNCH_SHOP
+  $027200  <EMPTY>   
+  $027634  < EMPTY >
+  $0276BC  LEVEL:
+  $027754  HP:
+  $027768  /
+  $0277A8  MP:---/---
+  $0277C4  MP:
+  $0277D8  /
+  $027808  AT:
+  $027838  DF:
+  $02784C  .(SEL_RPG_STAUT)
+  $027C40  SEL_RPG_MENU_UP
+  $027D74  SEL_RPG_MENU_DN
+  $028348   START 
+  $028638  L:
+  $028A20  /
+  $028A5C  /
+  $028A78  ---/---
+  $028AC0  /
+  $028AE4  +
+  $028B00  -
+  $028B28  /
+  $028B4C  +
+  $028B68  -
+  $028BA0  +
+  $028BBC  -
+  $028BF8  Gold:
+  $028C24  Level:  
+  $029258  DRAW_SEX_BORD
+  $029910  /12
+  $02991C  .NAME_BORD
+  $02A560  .OPTION_MENU
+  $02C08C  -???
+  $02C33C  MISS
+  $02D96C   ???
+  $02DBF4  WAR_INF
+  $02DF2C  EXP_LEVEL_UP_INF
+  $02E4C0  WAR_ACK_INF
+  $02E520  WAR_ACK_INF
+  $030620  SHOW_ACK_ICON
+  $031884  MAGIC_LOST_HP
+  $031F34  (MAGIC_STAUT)
+  $03205C  (MAGIC_STAUT)
+  $03217C  MAGIC_LOST_HP
+  $0328F0  (MAGIC_FUNCTION_PROG)
+  $0329D4  MAGIC_FUNCTION_PROG
+  $033154  MAZE
+  $036024  VS
+  $036194  /
+  $0361B0  ---/---
+  $0362F0  /
+  $03630C  ---/---
+  $0366F4  DRAW_DIE_BORD
+  $037E74  AI_MAGIC_ACK 
+  $037F14  AI_ACTION
+  $037FD4  AI_ACTION
+  $038950  (MATH_MAGIC) 
+  $0389E0  MATH_MAGIC 
+  $038EF0  AI_CHR_FORTH_MOVE
+  $0396E4  WAR_END
+  $039DCC  WAR_RPG_PROG
+  $03A3A8  WAR
+  $03C620  SHOW_ACK_ICON
+
+== Printed messages and labels
+  $0067E8  'DEPTH ERROR ?? '
+  $01A048  '   '
+  $01D320  "%&'(+$%&'(+$%&'(+./012-$%&'()%&'(*.%"

@@ -1,0 +1,71 @@
+Fragments of the developers' own 68000 assembly source, found baked into the
+graphics data of the Sango Fighter cartridge between $01C092 and $03238A.
+Each line is the ROM offset it was found at and the text exactly as stored.
+The same fragment often appears several times; duplicates are collapsed.
+
+$01C092  tst.b   d0
+$01C0B2  p2_airatkact_end:t
+$01C0D2  bsr     check_hitted_act
+$01C102  move.w  p1_oy,d1#$
+$01C122  move.w  p1_pthno,d3     ccdt99
+$01C152  move.b  p1_type,d4
+$01C172  p2_aichk_hit_act045
+$01C1B2  chk_hit_act50
+$01C1ED  chk_hit_act55
+$01FBFC  ;  c set
+$01FCD2  add.l   #12,a1
+$01FD52  sub.w   #1,d1
+$01FD72  move.b  p2_airatk,d1
+$01FDA2  clr.w   d1
+$01FDE2  clr.b   p2_airai
+$01FE02  move.w  #79,p2_airflag
+$01FE32  clr.b   p2_aircnt
+$01FE52  clr.b   p2_airstop
+$01FE72  move.b  #BACK_RATE,p1_backdot
+$01FEA2  move.b  #1,p1_hitback
+$01FED2  p2_airbomb_00:  ;
+$02007A  move.b  #B
+$02008B  s,p1_backdot
+$020212  move.w  #79,p2_air
+$020462  move.w  +4(a3),d6
+$0204A2  cmp.w   d3,d0
+$0204C2  move.w  d0,p2_lightx
+$0204F2  add.w   (a3),d0
+$020512  cab260: move.w  p1_txtx,d0
+$020542  bra     cab265
+$020562  add.w   d6,p2_lightx
+$0205B2  cmp.w   d2,d6
+$023C8A  p2_attack_voc:
+$023CA9  ,move.b  +78(a0,d1.w),d0         ;  get voi
+$023CEA  move.l  p2_pathptr,a0
+$023D1A  p2_attack_ok7:
+$023D43  yve.b  #1,p1_hitback
+$023D72  bne     p2_attack_end
+$023DAB  y,p2_hit
+$023DC2  move.b  d0,p1_hitnum
+$023DF2  p2_attack_ok8:
+$023E32  ;       call    play_voc1
+$023E62  ;       xor     ah
+$029C22  clr.w   p2_sleepcnt
+$029C52  beq     p1_exchg_end
+$029CA2  move.b  p2_hitnum,d0
+$029CD2  p2_airattack_end:
+$029CF2  ;       call    play_voc1k_p2_lose
+$029D22  ;       mov     ax,5
+$029D52  p2_air_defeat:
+$029D72  bra     p2_airattack_end
+$029DA2  ;       call    pl
+$02BCA2  move.w  SR,d0
+$02BCC2  cjbf190:        ;  c set
+$02BCF2  bra     cjbf107
+$02BD31  6cmp.w   #6,d2           ;
+$02BD82  add.w   #1,d2
+$02BE2A  cjbf195:
+$02BE6A  move.w  d0,SR
+$02C22B  s_air_defeat:
+$02DC23  zock start addresstern_wi
+$02DC49  &move.w  (a3),d7         ;  block count  ;  add to
+$02DC8F  $$ (a2),a3         ;  a3 = sprite start address    ;  block c
+$02DCDA  add.l   d6,a2{
+$031D43  y      ;  set ref back
+$031D72  move.w  (a1,a0.w),d0
