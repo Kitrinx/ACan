@@ -15,11 +15,9 @@ six-entry numbered stage list.
 together.** Start then opens a three-entry list of named stages: 綠野山坡
 (green hills), 機械戰地 (machine battlefield), 夜空突襲 (night-sky assault).
 
-Both confirmed on the game.
-
 **Start modifiers.** With code A entered, holding a button as you press Start
 adds an effect: **X** lets you jump again in mid-air; **L** turns the sound
-driver off. The mid-air jump was confirmed.
+driver off.
 
 ## The crash screen and its memory browser
 
@@ -39,21 +37,3 @@ code - you would need to crash the game to see it.
 **The input recorder.** The attract demos are recordings of real play, and the
 tool that made them - a routine that appends the pad word to a buffer each
 frame - is still in the ROM, with nothing calling it.
-
-## Other
-
-Start pauses. The cartridge never touches its save RAM. The title is credited
-to AV Artisan on screen even though the ROM carries the standard Funtech/UMC
-notice.
-
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Infinite lives | The life count stays at 3 |
-| Jump in mid-air | The mid-air jump modifier, always on |
-| Stage select - 6 stages | Start on the title opens the six-entry list |
-| Stage select - 3 stages | Start on the title opens the three-entry list |
-
-The two stage selects are alternatives; if both are on, the three-stage list
-wins. All four were confirmed in play.

@@ -21,13 +21,3 @@ Offsets are into the cartridge image in 68000 byte order.
   Not decoration: the game compares this string against the first 22 bytes of
   the cartridge save, and a mismatch starts a new game. The programmer's name is
   the save file's signature. The zeros stand in for spaces.
-
-== Sango Fighter (Taiwan), Gambling Overlord Mahjong (Taiwan)
-  No stamp. Both carry PC 'Creative Voice File' audio with its container headers
-  intact - extracted beside this. Sango Fighter also carries fragments of its own
-  68000 source, listed in its own file.
-
-== Chinese Professional Baseball League, War of Light Saga, Boom-Boom Zoo,
-   Journey to the Jest, Sonic Dragon, Child of Evil, African Expedition
-  No build stamp, date, version, path or developer name anywhere in the image.
-  Every cartridge does carry the standard Funtech/UMC notice at $2000.

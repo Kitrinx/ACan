@@ -14,28 +14,20 @@ own turn.** It presets both players' scores:
 | Down | 20 | 61 |
 | Left | 60 | 60 |
 
-Six buttons at once, so nothing in ordinary play trips it. It only works while
-it is your turn - on the opponent's turn the game is on a different code path
-and ignores it. Confirmed on the game. The winning score is 240.
+It only works while it is your turn.
 
-A second version of the same six-button chord, on a different screen, forces
-an immediate "scored, continue" turn result. Not confirmed.
-
-## Cheat codes that are not there
-
-No Start+Select reset. No password or continue system of any kind - every way
-into a game zeroes both scores, and the cartridge never touches its save RAM.
-Nothing persists.
+In the code it looks like a second version of the same six-button chord, on a
+different screen, forces an immediate "scored, continue" turn result, but it's
+uncertain where, if anywhere, it's triggered.
 
 ## Debug leftovers
 
 **A hidden sprite bank.** One flag, compared against the value `$5A`, switches
 the sprite table and sprite control register to an alternate set that retail
-can never select - nothing in the game ever stores that value. What the
-alternate bank looks like is unknown.
+doesn't seem to use.
 
-**A dead screen effect.** A per-scanline window effect exists in the code,
-gated on a flag that nothing sets.
+**A dead screen effect.** Some kind of per-scanline window effect exists in the code,
+triggered by a flag that nothing sets.
 
 ## Easter eggs
 
@@ -55,15 +47,3 @@ Other Stuff folder.
 
 **The 2 MB cartridge is a 1 MB game stored twice**, byte for byte.
 
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Infinite shot time | The shot clock stays at 11 seconds |
-| Player 1 wins now | Your score reads 240, the winning total |
-| Player 2 held at zero | The opponent's score never rises |
-| Turn never ends | The game always thinks you potted something |
-| Hidden sprite bank | Turns on the alternate sprite bank |
-
-The two score cheats are the same addresses the cheat code writes, so they are
-confirmed. The rest were read from the code and not individually tested.

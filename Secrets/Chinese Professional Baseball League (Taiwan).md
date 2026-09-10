@@ -48,17 +48,3 @@ a walk-off home run is 再見全壘打勝, and losing badly is 技不如人敗 -
 the better side". There is no build date, version, or developer name anywhere
 in the cartridge, and no padding either - it is full to the last byte, ending
 in the middle of a font.
-
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Never get an out | The out count stays at zero |
-| Never strike out | The strike count stays at zero |
-| Every pitch is a ball | Every pitch counts as ball four |
-| Home team scores 99 | The home side's score reads 99 |
-| Visiting team held at 0 | The visiting side never scores |
-| Stay in the first inning | The inning never advances |
-
-The power-on diagnostics were confirmed on the game. The cheat addresses were
-read from the code and not individually tested in play.

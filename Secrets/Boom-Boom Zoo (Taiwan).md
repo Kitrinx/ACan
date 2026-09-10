@@ -30,22 +30,14 @@ but here is the full list, left to right:
 | 17 | tiger bear pig pig | | 35 | panda panda panda pig |
 | 18 | panda bear tiger panda | | 36 | bear panda bear bear |
 
-Confirmed on the game.
+## A stage skip that I couldn't trigger
 
-## A stage skip that could not be triggered
-
-The code contains a stage-skip: an in-game object that, sixty frames into its
-life, watches for player one holding **exactly Select + L + R** and then ends
-the stage as cleared. The skip mechanism itself works. But the object that
-carries it could not be found in any stage that was tried - the title, the
-password screen, character select, stage 1, and stages 6, 13, 21 and 36 - so
-its trigger remains unknown.
+The code contains a stage-skip: an in-game object that, sixty frames into its life, watches for
+player one holding **exactly Select + L + R** and then ends the stage as cleared. The skip mechanism
+itself works. But I couldn't find the trigger. Not on the title, the password screen, character
+select, stage 1, and stages 6, 13, 21 and 36 - so its trigger remains unknown.
 
 ## Four players
 
 Players 2 to 4 join in through the multitap; the "Press Start" and 快加入
-prompts on the HUD are the join path.
-
-## MiSTer cheat pack
-
-None yet. This game was surveyed for secrets but no cheat pack has been built.
+prompts on the HUD are how they join.

@@ -1,6 +1,6 @@
 # The Child of Evil
 
-The Son of Evil, Funtech's action RPG. It carries the console's most
+The Child of Evil, Funtech's RPG. It carries the console's most
 elaborate developer secret: an island where the staff appear as characters.
 
 ## The developer island
@@ -62,16 +62,3 @@ Four slots in cartridge RAM, saved immediately from the field menu (X opens
 it). There is a hidden good/evil meter, nudged by story choices, that changes
 what some characters say.
 
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Debug mode (player 2 pad) | Turns on the debug switch above |
-| Debug flag - no music | The music switch from the same block |
-| Character 1-8 - infinite HP and MP | 999 HP and MP for that party member |
-| Infinite money | 銅錢 reads 9999 |
-| All seven Mani jewels | The seven jewels fill the first inventory slots |
-
-Character 1 is the hero, Shen Hao. The debug pad, the hero's stats, the money
-and the jewels were all confirmed in play. A second pack exists for the
-English translation build.

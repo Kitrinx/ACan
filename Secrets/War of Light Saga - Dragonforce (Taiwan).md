@@ -1,17 +1,14 @@
 # War of Light Saga - Dragonforce
 
 光明戰史 Dragon Force, © 1996 Kingformation. A strategy RPG, and almost none of
-it is 68000 code - the game runs on its own Forth-style threaded language.
+it is normal 68000 code - the game runs on its own Forth-style threaded language.
 
 ## Hidden input
 
 **Hold L while entering the settings screen** (遊戲設定 on the title menu) and
-the leafy green background becomes a starfield. Confirmed. It works from a
-cold boot and needs nothing else.
+the leafy green background becomes a starfield.
 
-**Start + Select together** resets the console back to the intro. Confirmed.
-
-**Y is a second confirm button** everywhere B is.
+**Start + Select together** resets the console back to the intro.
 
 ## The music player
 
@@ -31,11 +28,10 @@ track and plays it. There are 26, and the game titles them:
 ## The debug mode
 
 There is a developers' debug flag, and a chord that turns it on. **In the
-battle command menu, hold A + X + L + R together, with B and Y released.** A
+battle command menu, hold A + X + L + R together.** A
 sound plays, a graphic loads, and the flag is set. It is one-way - there is no
 chord to turn it off - and battle setup clears it again at the start of every
-battle, so it lasts one battle at a time. Read from the code; not yet
-confirmed in play.
+battle, so it lasts one battle at a time.
 
 With the flag on:
 
@@ -59,23 +55,3 @@ names the developers gave their words are in the cartridge:
 `MAGIC_FUNCTION_PROG`, `AI_CHR_FORTH_MOVE`, `CHUNCH_SHOP`, `DRAW_SEX_BORD`
 (the gender-select border), and their own misspellings `LOCAET_WAR_CURCE` and
 `STAUT`. The full list is in the Other Stuff folder.
-
-The last megabyte of the 3 MB cartridge is compressed art; the final 108 KB is
-blank. There is no date, version, or developer name anywhere in the ROM.
-
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Debug mode | Holds the developers' debug flag on permanently |
-| Infinite money | 現金 reads 99,999 |
-| Level 51 and all four skills | EXP pinned at 5000; level and skills derive from it |
-| Infinite HP | Current and maximum HP read 999 |
-| Infinite MP | Current and maximum MP read 999 |
-| Max attack | Base attack 900 |
-| Max defence | Base defence 900 |
-| Max agility | Agility 999 |
-
-The stat and money cheats were confirmed on the status screen. The debug flag
-does not disturb normal play. Whether the HP cheat survives combat was not
-tested.

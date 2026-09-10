@@ -1,7 +1,7 @@
 # Journey to the Jest
 
-Journey to the Laugh - a platformer of the Journey to the West, with a
-password system the game never tells you about.
+Journey to the Jest - a platformer of the Journey to the West, with an
+abtruse password system.
 
 ## The password system
 
@@ -33,13 +33,12 @@ across the bottom:
 | 1 3 9 6 | Stalactite cave with lava |
 | 9 3 2 1 | Cloud flight, final |
 
-All eighteen were confirmed on the game. The game never shows you a password -
-they must have been printed in the manual.
+All eighteen were confirmed on the game. The game shows you a password
+if you hit the guy at the end of the level with a ball.
 
 ## Cheat codes and hidden input
 
-There is no button code. Any button skips a story panel, Start pauses (and
-greys the whole screen), and Start ends the attract demo.
+None.
 
 ## Debug leftovers
 
@@ -51,22 +50,3 @@ nothing - a removed option.
 five digit slots, Left/Right to move, Up/Down to change, A to commit - with
 its own font of hex digits, a star and a dash. Nothing calls it and nothing
 reads its result. A debug entry screen left in the build.
-
-## Lives
-
-Five lives and three continues. There is no saving - the cartridge never
-touches its save RAM.
-
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Infinite lives | The life count never drops |
-| Infinite health | Both health meters stay full |
-| Always hold the red peach | The item slot always holds a red peach |
-| Always hold the pink peach | Same, pink |
-| Always hold the gold peach | Same, gold |
-
-The three peach cheats are alternatives. Infinite health does not stop falls -
-pits kill regardless - so infinite lives is the one that covers pits. Lives and
-health were confirmed in play.

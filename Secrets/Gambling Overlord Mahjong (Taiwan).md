@@ -29,16 +29,9 @@ in the 52-card game you bet first and the deck is shuffled after, but the
 shuffle is fixed by the frame you pressed A on; in the 32-tile game the tiles
 are already decided when you make your pick.
 
-## The opponents' tiles are not hidden
-
-There is no "show the opponent's hand" debug switch, because the game never
-hides the hands in memory at all. All four mahjong hands are stored in plain
-form and the game reads them every frame; "face down" is only a drawing
-choice. Anyone who can read the console's memory can read every hand.
-
 ## Debug leftovers
 
-**A slot-machine knob nothing turns.** One value is read seven times by the
+**A slot-machine tweak.** One value is read seven times by the
 slot machine - it sets which symbols the reels can land on and moves all
 three win-line thresholds with it - and nothing in the game ever writes it.
 It looks like a developer's "force the reels into range N" control.
@@ -53,25 +46,6 @@ forces the A button every frame and treats Start as "stop the demo".
 file sits in the ROM with its "Creative Voice File" header attached - the
 only trace of a development tool anywhere in the cartridge - and nothing in
 the game refers to it. Its header claims 8.7 seconds of audio; only the first
-1.75 seconds, a low swell and a decaying hit, is real, and the rest of the
+1.75 seconds, an open mic sounding noise, is real, and the rest of the
 claimed space was overwritten by other data. Both cuts are in the Other Stuff
 folder.
-
-Every word of Chinese in the game exists only as picture tiles; there is no
-text, no build date, and no developer name.
-
-## MiSTer cheat pack
-
-| Cheat | What it does |
-|---|---|
-| Maximum bet | The bet multiplier is always 10 |
-| Never go bust | The bust flag never sets, so no game over |
-| Character slot 1 rich | The first character's balance reads 999,999 |
-| Character slot 2 rich | Same for the second |
-| Character slot 3 rich | Same for the third |
-| Character slot 4 rich | Same for the fourth |
-| Slot machine reel base 1 | Sets the dormant reel knob to 1 |
-
-Balances are stored per character, not per seat, and which character you get
-depends on the roster draw, so money is offered per slot. Everyone starts on
-20,000. These were read from the code and not tested in play.
