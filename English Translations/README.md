@@ -12,3 +12,5 @@ These expect little-endian ROMs. The source file names may vary.
 | `REBEL (Taiwan) [T+Eng].ips` | `REBEL (Taiwan).bin` | `9E243C91` | `25174DB4` | 2 MB |
 | `Magic Cue Pool (Taiwan) [T+Eng].ips` | `Magic Cue Pool (Taiwan).bin` | `AED4E4F8` | `9B8AC43A` | 2 MB |
 | `Sango Fighter (Taiwan) [T+Eng].ips` | `Sango Fighter (Taiwan).bin` | `A4DE6DDE` | `3E1E6FED` | 3 MB |
+| `Gambling Overlord (Taiwan) [T+Eng].ips` | `Gambling Overlord (Taiwan).bin` | `AC4FA721` | `846F1531` | 2 MB |
+| `Formosa Duel (Taiwan) [T+Eng].ips` | `Formosa Duel (Taiwan).bin` | `B2BF31DC` | `84CD0F55` | 1 MB |
