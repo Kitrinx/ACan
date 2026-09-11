@@ -1,4 +1,4 @@
-# Gambling Overlord Mahjong
+# Gambling Overlord
 
 賭霸, © 1996 Funtech. Three gambling games in one cartridge, with historical
 figures - Puyi, Xi Shi, Qin Shi Huang - as the opponents on the game-select

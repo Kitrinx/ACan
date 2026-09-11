@@ -16,7 +16,7 @@ Offsets are into the cartridge image in 68000 byte order.
   Project codename 'Lancelot', build 002, 1995. The only developer text in the
   ROM. The publisher's logo card reads 'AV artisan'.
 
-== Rebel Planet (Taiwan)
+== REBEL (Taiwan)
   $005F86  'PROGRAMER JUH0WEN0HER'
   Not decoration: the game compares this string against the first 22 bytes of
   the cartridge save, and a mismatch starts a new game. The programmer's name is

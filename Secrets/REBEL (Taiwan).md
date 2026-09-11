@@ -1,4 +1,4 @@
-# Rebel Planet
+# REBEL
 
 叛星 - a turn-based squad tactics game.
 

@@ -11,6 +11,6 @@ reads 282 instead of 26, and the "pack" byte claims 4-bit ADPCM on 67 of the
 Sango Fighter: 75 voice clips, the fighters' shouts and grunts, copied from
 the PC original with the PC container headers still attached.
 
-Gambling Overlord Mahjong: one file, and nothing in the game ever plays it.
+Gambling Overlord: one file, and nothing in the game ever plays it.
 Its header claims 8.7 seconds, but only the first 1.75 seconds is audio.
 After that, whatever was thre was overwritten by random data.
