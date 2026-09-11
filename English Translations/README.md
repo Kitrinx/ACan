@@ -14,3 +14,4 @@ These expect little-endian ROMs. The source file names may vary.
 | `Sango Fighter (Taiwan) [T+Eng].ips` | `Sango Fighter (Taiwan).bin` | `A4DE6DDE` | `3E1E6FED` | 3 MB |
 | `Gambling Overlord (Taiwan) [T+Eng].ips` | `Gambling Overlord (Taiwan).bin` | `AC4FA721` | `846F1531` | 2 MB |
 | `Formosa Duel (Taiwan) [T+Eng].ips` | `Formosa Duel (Taiwan).bin` | `B2BF31DC` | `84CD0F55` | 1 MB |
+| `African Expedition - The Board Game (Taiwan) [T+Eng].ips` | `African Expedition - The Board Game (Taiwan).bin` | `DC3B7B84` | `7D6F5057` | 2 MB |
